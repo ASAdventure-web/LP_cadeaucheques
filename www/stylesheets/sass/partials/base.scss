@@ -1,0 +1,59 @@
+
+// VARIABLES
+$textColor: #454545;
+$linkColor: #B05A59;
+
+html{
+	width: 100%;
+}
+
+body{
+	margin: 0 auto;
+	width: 98%;
+}
+
+#lp-cadeaucheques-wrapper{
+	color: $textColor;
+	font-family: "Open Sans", arial, sans-serif;
+	font-size: 15px;
+	line-height: 22px;
+
+	h1{
+		font-size: 38px;
+		line-height: 1em;
+	}
+
+	h2{
+		font-size: 19px;
+		font-weight: bold;
+		line-height: 1.5em;
+	}
+
+	h3{
+		font-size: 15px;
+		font-weight: bold;
+		line-height: 1.4666em;
+	}
+
+	h4{
+		font-size: 15px;
+		font-weight: regular;
+		line-height: 1.4666em;
+	}
+
+	a{
+		color: $linkColor;
+
+		&:hover{
+			color: darken($linkColor, 10%);
+		}
+	}
+
+	hr{
+		background: #DEDEDE;
+		border: none;
+		box-shadow: 0 1px 0 #F8F8F8;
+		height: 1px;
+		width: 100%;
+	}
+}

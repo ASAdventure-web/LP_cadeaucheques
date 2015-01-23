@@ -1,0 +1,88 @@
+#lp-cadeaucheques-wrapper{
+// =============
+// BEGIN NESTING
+
+// General styling for cta's
+.cta{
+	border-radius: 3px;
+	display: inline-block;
+	font-size: 14px;
+	height: 40px;
+	line-height: 36px;
+	margin: 0 percentage(((487-250)/2)/1170);
+	padding: 0 1em;
+	text-decoration: none;
+	transition: all .1s ease-in-out;
+	width: percentage(250/1170);
+
+	&:after{
+		content: "";
+		font-family: "FontAwesome";
+		float: right;
+		line-height: 36px;
+		margin-left: 2em;
+	}
+
+	&:hover{
+		background: lighten($linkColor, 42%);
+		//border: 2px solid darken($linkColor, 20%);
+		//color: darken($linkColor, 20%);
+	}
+
+	@media only screen and(max-width: 979px) {
+		font-size: 12px;
+	}
+
+	@media only screen and(max-width: 767px) {
+		margin: 0 20%;
+		text-align: center;
+		width: 60%;
+
+		&:after{
+			display: none;
+		}
+	}
+}
+
+// Specific styling for header cta's
+.lp-cadeaucheques-header-hero-cta{
+	background: url(../../images/transparent_bg.png);
+	background: rgba(0,0,0,0.6);
+	border: 2px solid #ffffff;
+	box-sizing: border-box;
+	color: #ffffff;
+	height: 50px;
+	line-height: 46px;
+	margin: 0 auto;
+	width: percentage(268/582);
+
+	& + .lp-cadeaucheques-header-hero-cta{
+		margin-left: percentage(46/1170);
+
+		@media only screen and(max-width: 767px) {
+			margin-left: 0;
+			margin-top: 1em;
+		}
+	}
+
+	&:after{
+		line-height: 46px;
+	}
+
+	&:hover{
+		background: #ffffff;
+		border: 2px solid $textColor;
+		color: $textColor;
+	}
+
+	@media only screen and(max-width: 767px) {
+		float: none;
+		display: block;
+		width: 100%;
+	}
+}
+
+
+// END NESTING
+// ===========
+}

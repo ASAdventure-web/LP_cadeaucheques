@@ -1,0 +1,356 @@
+#lp-cadeaucheques-wrapper{
+	box-sizing: border-box;
+	margin: 0 auto;
+	max-width: 1170px;
+	padding: 4em 0;
+	width: 100%;
+
+// =============
+// BEGIN NESTING
+
+.lp-clearfix:after{
+	clear: both;
+	content: "";
+	display: table;
+}
+
+.lp-cadeaucheques-promo{
+	background: #FDF0E8;
+
+	background: -webkit-linear-gradient(left, rgba(243,154,99,0), rgba(243,154,99,.15), rgba(243,154,99,0));
+	background: -o-linear-gradient(left, rgba(243,154,99,0), rgba(243,154,99,.15), rgba(243,154,99,0));
+	background: linear-gradient(to right, rgba(243,154,99,0), rgba(243,154,99,.15), rgba(243,154,99,0));
+	border-bottom: 1px solid #FBDCC7;
+	border-top: 1px solid #FBDCC7;
+	box-sizing: border-box;
+	//box-shadow: 0 1px 0 #FBDCC7, 0 -1px 0 #FBDCC7;
+	margin: 4em 0;
+	padding: 2em 20% 2em 20%;
+	text-align: left;
+	width: 100%;
+
+	@media only screen and(max-width: 767px) {
+		padding: 1em 10%;
+	}
+
+	&:hover{
+		background: #FBE6D7;
+		background: -webkit-linear-gradient(left, rgba(243,154,99,0), rgba(243,154,99,.25), rgba(243,154,99,0));
+		background: -o-linear-gradient(left, rgba(243,154,99,0), rgba(243,154,99,.25), rgba(243,154,99,0));
+		background: linear-gradient(to right, rgba(243,154,99,0), rgba(243,154,99,.25), rgba(243,154,99,0));
+	}
+
+	&:before{
+		color: #F39A63;
+		content: "";
+		float: left;
+		font-family: "FontAwesome";
+		font-size: 3em;
+		margin-right: 1em;
+		padding-top: .25em;
+		text-shadow: 1px 1px 0 rgba(216,87,26,.8);
+
+		@media only screen and(max-width: 767px) {
+			display: none;
+		}
+	}
+}
+
+.lp-cadeaucheques-promo-text{
+	float: left;
+	margin: 0;
+	//padding-left: 20%;
+	width: 80%;
+
+	@media only screen and(max-width: 767px) {
+		width: 100%;
+	}
+}
+
+.lp-cadeaucheques-header{
+	width: 100%;
+}
+
+.lp-cadeaucheques-header-hero{
+	position: relative;
+	padding-bottom: percentage(410/1170);
+
+	@media only screen and(max-width: 767px) {
+		padding-bottom: percentage(260/360);
+	}
+
+	&:after{
+		content: "";
+		clear: both;
+		display: block;
+		height: 13px;
+		position: absolute;
+			bottom: percentage(-14/450);
+		width: 100%;
+	}
+}
+
+.lp-cadeaucheques-header-hero-ctablock{
+	box-sizing: border-box;
+	padding: 0 percentage(294/1170);
+	position: absolute;
+		bottom: percentage(40/450);
+		width: 100%;
+}
+
+.lp-cadeaucheques-header-headinggroup{
+	margin-bottom: 5em;
+}
+
+.lp-cadeaucheques-header-heading{
+	font-size: 38px;
+	font-weight: 400;
+	line-height: 1em;
+	margin: 1.68em 0 1.16em;
+	text-align: center;
+
+	@media only screen and(max-width: 767px) {
+		font-size: 24px;
+		font-weight: bold;
+		line-height: 1.5em;
+	}
+
+	@media only screen and(max-width: 564px){
+		font-size: 20px;
+	}
+}
+
+.lp-cadeaucheques-header-subheading{
+	padding: 0 15%;
+
+	@media only screen and(max-width: 767px) {
+		padding: 0 5%;
+		text-align: justify;
+	}
+}
+
+.lp-cadeaucheques-content{
+	box-sizing: border-box;
+	padding-bottom: 6em;
+	position: relative;
+	width: 100%;
+
+	@media only screen and(max-width: 767px) {
+		padding: 0 5%;
+	}
+}
+
+.lp-cadeaucheques-content-anchor{
+	position: relative;
+		top: -50px;
+}
+
+.lp-cadeaucheques-content-article-block{
+	box-sizing: border-box;
+	float: left;
+	width: percentage(585/1170);
+
+	& + .lp-cadeaucheques-content-article-block{
+		border-left: 2px solid #F7F7F7;
+
+		@media only screen and(max-width: 767px) {
+			margin-top: 4em;
+			border: none;
+		}
+	}
+
+	@media only screen and(max-width: 767px) {
+		border-bottom: 2px solid lighten($linkColor, 45%);
+		padding-bottom: 5em;
+		position: relative;
+		width: 100%;
+	}
+}
+
+.lp-cadeaucheques-content-imageheader{
+	box-sizing: border-box;
+	//float: left;
+	margin-bottom: 1em;
+	padding: 0 percentage(98/(1170-2));
+	width: 100%;
+
+	img{
+		@media only screen and(max-width: 767px) {
+			display: none;
+		}
+	}
+	
+	.right{
+		float: right;
+	}
+
+	.left{
+		float: left;
+	}
+}
+
+.lp-cadeaucheques-content-article{
+	box-sizing: border-box;
+	float: left;
+	padding: 0 percentage(98/(1170-2));
+	text-align: justify;
+	width: 100%;
+
+	@media only screen and(max-width: 767px) {
+		padding: 0 2%;
+	}
+}
+
+.lp-cadeaucheques-content-article-heading{
+	margin-bottom: 1.5em;
+}
+
+.lp-cadeaucheques-content-article-image{
+	height: auto;
+	margin: 0 percentage(((487-386)/2)/487);
+	max-width: 100%;
+	width: percentage(386/487);
+
+	@media only screen and(max-width: 767px) {
+		margin: 0 percentage(((637-386)/2)/637);
+		width: percentage(386/637);
+	}
+}
+
+.lp-cadeaucheques-content-article-table{
+	border-collapse: collapse;
+	margin: 2em 0;
+	width: 100%;
+
+	tr + tr{
+		td{
+			border-top: 1px solid lighten($linkColor, 40%);
+		}
+	}
+
+	tr:first-child{
+		td:first-child{
+			border: none;
+		}
+	}
+
+	td{
+		color: $linkColor;
+		font-size: 2em;
+		font-weight: bold;
+		height: 2em;
+		line-height: 1.2em;
+		text-align: center;
+
+		& + td{
+			border-left: 1px solid lighten($linkColor, 40%);
+		}
+	}
+}
+
+.table-currency{
+	font-size: .6666em;
+	font-weight: 100; 
+}
+
+.lp-cadeaucheques-content-article-cta{
+	border: 2px solid $linkColor;
+	box-sizing: border-box;
+	font-size: 14px;
+	line-height: 36px;
+	margin-left: percentage(59/1170);
+	position: absolute;
+		bottom: 2em;
+	width: percentage(268/1170);
+
+	@media only screen and(max-width: 767px) {
+		width: 50%;
+		margin-left: 15%;
+	}
+}
+
+.lp-cadeaucheques-footer{
+	box-shadow: 0 0 1px rgba(0,0,0,0.3);
+	margin: 5em 0;
+	padding: 0 percentage(60/1170) 3em;
+	position: relative;
+
+	&:before, &:after{
+		content: "";
+		clear: both;
+		display: block;
+		height: 20px;
+		position: relative;
+			left: 0;
+		width: 100%;
+	}
+
+	&:before{
+		background: url(../../images/schaduw_top.png) no-repeat center;
+		background-size: cover;
+		top: -20px;
+
+		@media only screen and(max-width: 767px) {
+			background: none;
+		}
+	}
+
+	&:after{
+		background: url(../../images/schaduw_bottom.png) no-repeat center;
+		background-size: cover;
+		bottom: -65px;
+
+		@media only screen and(max-width: 767px) {
+			background: none;
+		}
+	}
+}
+
+.lp-cadeaucheques-footer-title-bar{
+	box-sizing: border-box;
+	height: 109px;
+	margin: 0 auto;
+	padding: 2.2em 0;
+	padding-left: percentage((945/2)/1170);
+	text-align: center;
+	width: 90%;
+}
+
+.lp-cadeaucheques-info-icon{
+	float: left;
+	margin-left: -140px;
+}
+
+.lp-cadeaucheques-footer-heading{
+	float: left;
+	line-height: 1.2em;
+	margin-left: -140px;
+	padding-left: 60px;
+}
+
+.lp-cadeaucheques-footer-article{
+	float: left;
+	margin-top: 2em;
+	text-align: justify;
+	width: percentage(285/974);
+
+	& + .lp-cadeaucheques-footer-article{
+		margin-left: percentage(60/1170);
+
+		@media only screen and(max-width: 767px) {
+			margin-left: 0;
+		}
+	}
+
+	@media only screen and(max-width: 767px) {
+		width: 80%;
+	}
+
+	@media only screen and(max-width: 580px) {
+		width: 100%;
+	}
+}
+
+// END NESTING
+// ===========
+}

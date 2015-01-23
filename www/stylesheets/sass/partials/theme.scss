@@ -1,0 +1,48 @@
+#lp-cadeaucheques-wrapper{
+	background: #ffffff;
+
+// =============
+// BEGIN NESTING
+
+.lp-cadeaucheques-header{
+	//background: #dddddd;
+}
+
+.lp-cadeaucheques-header-hero{
+	background: url(../../images/header.jpg) no-repeat center;
+	background-size: contain;
+
+	@media only screen and(max-width: 767px) {
+		background: url(../../images/header_mobile.jpg) no-repeat center;
+		background-size: contain;
+	}
+
+	&:after{
+		background: url(../../images/schaduw.png) no-repeat center;
+		background-size: cover;
+
+		@media only screen and(max-width: 767px) {
+			display: none;
+		}
+	}
+}
+
+.lp-cadeaucheques-header-headinggroup{
+	text-align: center;
+}
+
+.lp-cadeaucheques-header-subheading{
+	font-weight: 400;
+}
+
+.lp-cadeaucheques-content-article-heading{
+	text-align: center;
+}
+
+.lp-cadeaucheques-footer{
+	background: #F0F0F0;
+}
+
+// END NESTING
+// ===========
+}
