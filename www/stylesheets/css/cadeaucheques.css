@@ -44,6 +44,7 @@
   #lp-cadeaucheques-wrapper .lp-cadeaucheques-promo {
     background: #FDF0E8;
     background: -webkit-linear-gradient(left, rgba(243, 154, 99, 0), rgba(243, 154, 99, 0.15), rgba(243, 154, 99, 0));
+    background: -o-linear-gradient(left, rgba(243, 154, 99, 0), rgba(243, 154, 99, 0.15), rgba(243, 154, 99, 0));
     background: linear-gradient(to right, rgba(243, 154, 99, 0), rgba(243, 154, 99, 0.15), rgba(243, 154, 99, 0));
     border-bottom: 1px solid #FBDCC7;
     border-top: 1px solid #FBDCC7;
@@ -58,6 +59,7 @@
     #lp-cadeaucheques-wrapper .lp-cadeaucheques-promo:hover {
       background: #FBE6D7;
       background: -webkit-linear-gradient(left, rgba(243, 154, 99, 0), rgba(243, 154, 99, 0.25), rgba(243, 154, 99, 0));
+      background: -o-linear-gradient(left, rgba(243, 154, 99, 0), rgba(243, 154, 99, 0.25), rgba(243, 154, 99, 0));
       background: linear-gradient(to right, rgba(243, 154, 99, 0), rgba(243, 154, 99, 0.25), rgba(243, 154, 99, 0)); }
     #lp-cadeaucheques-wrapper .lp-cadeaucheques-promo:before {
       color: #F39A63;
@@ -286,8 +288,7 @@
   padding: 0 1em;
   text-decoration: none;
   text-align: left;
-  -webkit-transition: all .1s ease-in-out;
-          transition: all .1s ease-in-out;
+  transition: all .1s ease-in-out;
   width: 21.3675213675%; }
   #lp-cadeaucheques-wrapper .cta:after {
     content: "";
@@ -340,6 +341,18 @@
   #lp-cadeaucheques-wrapper .lp-cadeaucheques-header-hero {
     background: url(../../images/header.jpg) no-repeat center;
     background-size: contain; }
+    #lp-cadeaucheques-wrapper .lp-cadeaucheques-header-hero.nl-fix {
+      background: url(../../images/header-nl.jpg) no-repeat center;
+      background-size: contain; }
+    #lp-cadeaucheques-wrapper .lp-cadeaucheques-header-hero.fr-fix {
+      background: url(../../images/header-fr.jpg) no-repeat center;
+      background-size: contain; }
+    #lp-cadeaucheques-wrapper .lp-cadeaucheques-header-hero.en-fix {
+      background: url(../../images/header-en.jpg) no-repeat center;
+      background-size: contain; }
+    #lp-cadeaucheques-wrapper .lp-cadeaucheques-header-hero.de-fix {
+      background: url(../../images/header-de.jpg) no-repeat center;
+      background-size: contain; }
     @media only screen and (max-width: 767px) {
       #lp-cadeaucheques-wrapper .lp-cadeaucheques-header-hero {
         background: url(../../images/header_mobile.jpg) no-repeat center;
@@ -358,5 +371,3 @@
     text-align: center; }
   #lp-cadeaucheques-wrapper .lp-cadeaucheques-footer {
     background: #F0F0F0; }
-
-/*# sourceMappingURL=cadeaucheques.css.map */

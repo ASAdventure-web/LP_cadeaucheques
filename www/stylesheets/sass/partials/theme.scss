@@ -12,6 +12,26 @@
 	background: url(../../images/header.jpg) no-repeat center;
 	background-size: contain;
 
+	&.nl-fix{
+		background: url(../../images/header-nl.jpg) no-repeat center;
+		background-size: contain;
+	}
+
+	&.fr-fix{
+		background: url(../../images/header-fr.jpg) no-repeat center;
+		background-size: contain;
+	}
+
+	&.en-fix{
+		background: url(../../images/header-en.jpg) no-repeat center;
+		background-size: contain;
+	}
+
+	&.de-fix{
+		background: url(../../images/header-de.jpg) no-repeat center;
+		background-size: contain;
+	}
+
 	@media only screen and(max-width: 767px) {
 		background: url(../../images/header_mobile.jpg) no-repeat center;
 		background-size: contain;
