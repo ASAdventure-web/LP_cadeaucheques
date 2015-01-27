@@ -2,7 +2,7 @@
 	box-sizing: border-box;
 	margin: 0 auto;
 	max-width: 1170px;
-	padding: 4em 0;
+	padding: 0;
 	width: 100%;
 
 // =============
@@ -23,7 +23,6 @@
 	border-bottom: 1px solid #FBDCC7;
 	border-top: 1px solid #FBDCC7;
 	box-sizing: border-box;
-	//box-shadow: 0 1px 0 #FBDCC7, 0 -1px 0 #FBDCC7;
 	margin: 4em 0;
 	padding: 2em 20% 2em 20%;
 	text-align: left;
@@ -142,7 +141,7 @@
 
 .lp-cadeaucheques-content-anchor{
 	position: relative;
-		top: -50px;
+		top: -187px;
 }
 
 .lp-cadeaucheques-content-article-block{
@@ -349,6 +348,10 @@
 	@media only screen and(max-width: 580px) {
 		width: 100%;
 	}
+}
+
+.lp-cadeaucheques-footer-subtitle{
+	text-align: left;
 }
 
 // END NESTING

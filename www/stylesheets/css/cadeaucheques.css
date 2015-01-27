@@ -1,11 +1,4 @@
 @charset "UTF-8";
-html {
-  width: 100%; }
-
-body {
-  margin: 0 auto;
-  width: 98%; }
-
 #lp-cadeaucheques-wrapper {
   color: #454545;
   font-family: "Open Sans", arial, sans-serif;
@@ -20,8 +13,9 @@ body {
     line-height: 1.5em; }
   #lp-cadeaucheques-wrapper h3 {
     font-size: 15px;
-    font-weight: bold;
-    line-height: 1.4666em; }
+    font-weight: bold !important;
+    line-height: 1.4666em;
+    margin: 1em 0; }
   #lp-cadeaucheques-wrapper h4 {
     font-size: 15px;
     font-weight: regular;
@@ -38,11 +32,10 @@ body {
     width: 100%; }
 
 #lp-cadeaucheques-wrapper {
-  -moz-box-sizing: border-box;
-       box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0 auto;
   max-width: 1170px;
-  padding: 4em 0;
+  padding: 0;
   width: 100%; }
   #lp-cadeaucheques-wrapper .lp-clearfix:after {
     clear: both;
@@ -54,8 +47,7 @@ body {
     background: linear-gradient(to right, rgba(243, 154, 99, 0), rgba(243, 154, 99, 0.15), rgba(243, 154, 99, 0));
     border-bottom: 1px solid #FBDCC7;
     border-top: 1px solid #FBDCC7;
-    -moz-box-sizing: border-box;
-         box-sizing: border-box;
+    box-sizing: border-box;
     margin: 4em 0;
     padding: 2em 20% 2em 20%;
     text-align: left;
@@ -103,8 +95,7 @@ body {
       bottom: -3.1111111111%;
       width: 100%; }
   #lp-cadeaucheques-wrapper .lp-cadeaucheques-header-hero-ctablock {
-    -moz-box-sizing: border-box;
-         box-sizing: border-box;
+    box-sizing: border-box;
     padding: 0 25.1282051282%;
     position: absolute;
     bottom: 8.8888888889%;
@@ -132,8 +123,7 @@ body {
         padding: 0 5%;
         text-align: justify; } }
   #lp-cadeaucheques-wrapper .lp-cadeaucheques-content {
-    -moz-box-sizing: border-box;
-         box-sizing: border-box;
+    box-sizing: border-box;
     padding-bottom: 6em;
     position: relative;
     width: 100%; }
@@ -142,10 +132,9 @@ body {
         padding: 0 5%; } }
   #lp-cadeaucheques-wrapper .lp-cadeaucheques-content-anchor {
     position: relative;
-    top: -50px; }
+    top: -187px; }
   #lp-cadeaucheques-wrapper .lp-cadeaucheques-content-article-block {
-    -moz-box-sizing: border-box;
-         box-sizing: border-box;
+    box-sizing: border-box;
     float: left;
     width: 50%; }
     #lp-cadeaucheques-wrapper .lp-cadeaucheques-content-article-block + .lp-cadeaucheques-content-article-block {
@@ -161,8 +150,7 @@ body {
         position: relative;
         width: 100%; } }
   #lp-cadeaucheques-wrapper .lp-cadeaucheques-content-imageheader {
-    -moz-box-sizing: border-box;
-         box-sizing: border-box;
+    box-sizing: border-box;
     margin-bottom: 1em;
     padding: 0 8.3904109589%;
     width: 100%; }
@@ -174,8 +162,7 @@ body {
     #lp-cadeaucheques-wrapper .lp-cadeaucheques-content-imageheader .left {
       float: left; }
   #lp-cadeaucheques-wrapper .lp-cadeaucheques-content-article {
-    -moz-box-sizing: border-box;
-         box-sizing: border-box;
+    box-sizing: border-box;
     float: left;
     padding: 0 8.3904109589%;
     text-align: justify;
@@ -216,8 +203,7 @@ body {
     font-weight: 100; }
   #lp-cadeaucheques-wrapper .lp-cadeaucheques-content-article-cta {
     border: 2px solid #B05A59;
-    -moz-box-sizing: border-box;
-         box-sizing: border-box;
+    box-sizing: border-box;
     font-size: 14px;
     line-height: 36px;
     margin-left: 5.0427350427%;
@@ -256,8 +242,7 @@ body {
         #lp-cadeaucheques-wrapper .lp-cadeaucheques-footer:after {
           background: none; } }
   #lp-cadeaucheques-wrapper .lp-cadeaucheques-footer-title-bar {
-    -moz-box-sizing: border-box;
-         box-sizing: border-box;
+    box-sizing: border-box;
     height: 109px;
     margin: 0 auto;
     padding: 2.2em 0;
@@ -288,6 +273,8 @@ body {
     @media only screen and (max-width: 580px) {
       #lp-cadeaucheques-wrapper .lp-cadeaucheques-footer-article {
         width: 100%; } }
+  #lp-cadeaucheques-wrapper .lp-cadeaucheques-footer-subtitle {
+    text-align: left; }
 
 #lp-cadeaucheques-wrapper .cta {
   border-radius: 3px;
@@ -298,6 +285,7 @@ body {
   margin: 0 10.1282051282%;
   padding: 0 1em;
   text-decoration: none;
+  text-align: left;
   -webkit-transition: all .1s ease-in-out;
           transition: all .1s ease-in-out;
   width: 21.3675213675%; }
@@ -323,8 +311,7 @@ body {
   background: url(../../images/transparent_bg.png);
   background: rgba(0, 0, 0, 0.6);
   border: 2px solid #ffffff;
-  -moz-box-sizing: border-box;
-       box-sizing: border-box;
+  box-sizing: border-box;
   color: #ffffff;
   height: 50px;
   line-height: 46px;
