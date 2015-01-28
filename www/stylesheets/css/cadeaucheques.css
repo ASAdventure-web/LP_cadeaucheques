@@ -65,7 +65,7 @@
       color: #F39A63;
       content: "";
       float: left;
-      font-family: "FontAwesome";
+      font-family: "FontAwesome", "Font Awesome";
       font-size: 3em;
       margin-right: 1em;
       padding-top: .25em;
@@ -292,7 +292,7 @@
   width: 21.3675213675%; }
   #lp-cadeaucheques-wrapper .cta:after {
     content: "";
-    font-family: "FontAwesome";
+    font-family: "FontAwesome", "Font Awesome";
     float: right;
     line-height: 36px;
     margin-left: 2em; }
