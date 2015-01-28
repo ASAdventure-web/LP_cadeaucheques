@@ -102,6 +102,12 @@
     position: absolute;
     bottom: 8.8888888889%;
     width: 100%; }
+    @media only screen and (max-width: 767px) {
+      #lp-cadeaucheques-wrapper .lp-cadeaucheques-header-hero-ctablock {
+        padding: 0 3%;
+        position: absolute;
+        bottom: 8.8888888889%;
+        width: 100%; } }
   #lp-cadeaucheques-wrapper .lp-cadeaucheques-header-headinggroup {
     margin-bottom: 5em; }
   #lp-cadeaucheques-wrapper .lp-cadeaucheques-header-heading {
@@ -317,13 +323,12 @@
   height: 50px;
   line-height: 46px;
   margin: 0 auto;
-  width: 46.0481099656%; }
+  width: 47.4226804124%; }
   #lp-cadeaucheques-wrapper .lp-cadeaucheques-header-hero-cta + .lp-cadeaucheques-header-hero-cta {
     margin-left: 3.9316239316%; }
     @media only screen and (max-width: 767px) {
       #lp-cadeaucheques-wrapper .lp-cadeaucheques-header-hero-cta + .lp-cadeaucheques-header-hero-cta {
-        margin-left: 0;
-        margin-top: 1em; } }
+        margin-left: 5%; } }
   #lp-cadeaucheques-wrapper .lp-cadeaucheques-header-hero-cta:after {
     line-height: 46px; }
   #lp-cadeaucheques-wrapper .lp-cadeaucheques-header-hero-cta:hover {
@@ -332,9 +337,9 @@
     color: #454545; }
   @media only screen and (max-width: 767px) {
     #lp-cadeaucheques-wrapper .lp-cadeaucheques-header-hero-cta {
-      float: none;
+      float: left;
       display: block;
-      width: 100%; } }
+      width: 47%; } }
 
 #lp-cadeaucheques-wrapper {
   background: #ffffff; }
@@ -344,19 +349,31 @@
     #lp-cadeaucheques-wrapper .lp-cadeaucheques-header-hero.nl-fix {
       background: url(../../images/header-nl.jpg) no-repeat center;
       background-size: contain; }
+      @media only screen and (max-width: 767px) {
+        #lp-cadeaucheques-wrapper .lp-cadeaucheques-header-hero.nl-fix {
+          background: url(../../images/header_mobile-nl.jpg) no-repeat center;
+          background-size: contain; } }
     #lp-cadeaucheques-wrapper .lp-cadeaucheques-header-hero.fr-fix {
       background: url(../../images/header-fr.jpg) no-repeat center;
       background-size: contain; }
+      @media only screen and (max-width: 767px) {
+        #lp-cadeaucheques-wrapper .lp-cadeaucheques-header-hero.fr-fix {
+          background: url(../../images/header_mobile-fr.jpg) no-repeat center;
+          background-size: contain; } }
     #lp-cadeaucheques-wrapper .lp-cadeaucheques-header-hero.en-fix {
       background: url(../../images/header-en.jpg) no-repeat center;
       background-size: contain; }
+      @media only screen and (max-width: 767px) {
+        #lp-cadeaucheques-wrapper .lp-cadeaucheques-header-hero.en-fix {
+          background: url(../../images/header_mobile-en.jpg) no-repeat center;
+          background-size: contain; } }
     #lp-cadeaucheques-wrapper .lp-cadeaucheques-header-hero.de-fix {
       background: url(../../images/header-de.jpg) no-repeat center;
       background-size: contain; }
-    @media only screen and (max-width: 767px) {
-      #lp-cadeaucheques-wrapper .lp-cadeaucheques-header-hero {
-        background: url(../../images/header_mobile.jpg) no-repeat center;
-        background-size: contain; } }
+      @media only screen and (max-width: 767px) {
+        #lp-cadeaucheques-wrapper .lp-cadeaucheques-header-hero.de-fix {
+          background: url(../../images/header_mobile-de.jpg) no-repeat center;
+          background-size: contain; } }
     #lp-cadeaucheques-wrapper .lp-cadeaucheques-header-hero:after {
       background: url(../../images/schaduw.png) no-repeat center;
       background-size: cover; }
