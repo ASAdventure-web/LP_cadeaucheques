@@ -1,15 +1,13 @@
 <link rel='stylesheet' href='//static.asadventure.com/includes/landingpage/cadeaucheques_v2/stylesheets/css/cadeaucheques.css'>
-<link rel='stylesheet' href='//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
-<link href='//fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
 
 <!--[if lt IE 9]>
-	  <script src='//html5shiv.googlecode.com/svn/trunk/html5.js'></script>
-	  <script>window.html5 || document.write('<script src='js/vendor/html5shiv.js'><\/script>')</script>
-	<![endif]-->
+    <script src='//html5shiv.googlecode.com/svn/trunk/html5.js'></script>
+    <script>window.html5 || document.write('<script src='js/vendor/html5shiv.js'><\/script>')</script>
+  <![endif]-->
 
 <div id='lp-cadeaucheques-wrapper'>
   <section class='lp-cadeaucheques-header'>
-    <div class='lp-cadeaucheques-header-hero fr-fix'>
+    <div id='lp-cadeaucheques-header-hero' class='lp-cadeaucheques-header-hero fr-fix'>
       <div class='lp-cadeaucheques-header-hero-content'>
         <div class='lp-cadeaucheques-header-hero-ctablock'>
           <a href='#digitaal' class='cta lp-cadeaucheques-header-hero-cta'>Version num&eacute;rique</a>
@@ -17,10 +15,6 @@
         </div>
       </div>
     </div>
-
-    <!-- <section class='lp-cadeaucheques-promo lp-clearfix'>
-      <p class='lp-cadeaucheques-promo-text'>Commandez un ch&egrave;que-cadeau A.S.Adventure entre le 10 et le 14 f&eacute;vrier 2015 et tentez de gagner une escapade romantique d'une valeur de &euro;500&nbsp;!</p>
-    </section> -->
 
     <hgroup id="lp-cadeaucheques-header-headinggroup" class='lp-cadeaucheques-header-headinggroup'>
       <h1 class='lp-cadeaucheques-header-heading'>D&eacute;couvrez les ch&egrave;ques-cadeaux&nbsp;A.S.Adventure</h1>
@@ -118,31 +112,37 @@
 </div>
 
 <script type='text/javascript'>
-  function message() {
-    var itemToPrepend = document.getElementById('lp-cadeaucheques-header-headinggroup');
+function headerImage() {
+  var headerHeroElement = document.getElementById('lp-cadeaucheques-header-hero');
+  headerHeroElement.className = 'lp-cadeaucheques-header-hero fr-fix valentijn';
+}
 
-    var messageContainerElement = document.createElement('section');
-    messageContainerElement.innerHTML = "<p class='lp-cadeaucheques-promo-text'>Commandez un ch&egrave;que-cadeau A.S.Adventure entre le 10 et le 14 f&eacute;vrier 2015 et tentez de gagner une escapade romantique d'une valeur de &euro;500&nbsp;!</p>";
-    messageContainerElement.className = 'lp-cadeaucheques-promo lp-clearfix';
+function message() {
+  var itemToPrepend = document.getElementById('lp-cadeaucheques-header-headinggroup');
 
-    itemToPrepend.parentNode.insertBefore(messageContainerElement, itemToPrepend);
+  var messageContainerElement = document.createElement('section');
+  messageContainerElement.innerHTML = "<p class='lp-cadeaucheques-promo-text'>Commandez un ch&egrave;que-cadeau A.S.Adventure entre le 10 et le 14 f&eacute;vrier 2015 et tentez de gagner une escapade romantique d'une valeur de &euro;500&nbsp;!</p>";
+  messageContainerElement.className = 'lp-cadeaucheques-promo lp-clearfix';
+
+  itemToPrepend.parentNode.insertBefore(messageContainerElement, itemToPrepend);
+}
+
+// Date to begin
+var d1 = new Date('2015, 2, 10').getTime();
+// Date to end
+var d2 = new Date('2015, 2, 15').getTime();
+
+function dateRange(d1, d2) {
+  // Today
+  var testDate = new Date().getTime();
+
+  if (testDate >= d1 && testDate < d2) {
+    headerImage();
+    message();
+  } else {
+
   }
+}
 
-  // Date to begin
-  var d1 = new Date('2015, 2, 10').getTime();
-  // Date to end
-  var d2 = new Date('2015, 2, 15').getTime();
-
-  function dateRange(d1, d2) {
-    // Today
-    // var testDate = new Date().getTime();
-    var testDate = new Date('2015, 2, 14').getTime();
-    if (testDate >= d1 && testDate < d2) {
-      message();
-    } else {
-
-    }
-  }
-
-  dateRange(d1, d2);
-  </script>
+dateRange(d1, d2);
+</script>

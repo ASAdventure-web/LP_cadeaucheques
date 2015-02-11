@@ -6,7 +6,7 @@
   <meta http-equiv='X-UA-Compatible' content='IE=edge'>
   <meta name='viewport' content='width=device-width, initial-scale=1.0'>
   <title></title>
-  <link rel='stylesheet' href='//static.asadventure.com/includes/landingpage/cadeaucheques_v2/stylesheets/css/cadeaucheques.css'>
+  <link rel='stylesheet' href='/stylesheets/css/cadeaucheques.css'>
   <link rel='stylesheet' href='//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
   <link href='//fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
 
@@ -19,7 +19,7 @@
 <body>
   <div id='lp-cadeaucheques-wrapper'>
     <section class='lp-cadeaucheques-header'>
-      <div class='lp-cadeaucheques-header-hero nl-fix'>
+      <div id='lp-cadeaucheques-header-hero' class='lp-cadeaucheques-header-hero nl-fix'>
         <div class='lp-cadeaucheques-header-hero-content'>
           <div class='lp-cadeaucheques-header-hero-ctablock'>
             <a href='#digitaal' class='cta lp-cadeaucheques-header-hero-cta'>De digitale versie</a>
@@ -128,6 +128,11 @@
   </div>
 
   <script type='text/javascript'>
+  function headerImage(){
+    var headerHeroElement = document.getElementById('lp-cadeaucheques-header-hero');
+    headerHeroElement.className = 'lp-cadeaucheques-header-hero nl-fix valentijn';
+  }
+
   function message() {
   	var itemToPrepend = document.getElementById('lp-cadeaucheques-header-headinggroup');
 
@@ -148,6 +153,7 @@
     // var testDate = new Date().getTime();
     var testDate = new Date('2015, 2, 14').getTime();
     if (testDate >= d1 && testDate < d2) {
+      headerImage();
       message();
     } else {
 
