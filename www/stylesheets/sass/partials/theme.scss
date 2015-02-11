@@ -10,6 +10,46 @@
 
 .lp-cadeaucheques-header-hero{
 	&.nl-fix{
+		background: url(../../images/header-nl.jpg) no-repeat center;
+		background-size: contain;
+
+		@media only screen and(max-width: 767px) {
+			background: url(../../images/header-mobile-nl.jpg) no-repeat center;
+			background-size: contain;
+		}
+	}
+
+	&.fr-fix{
+		background: url(../../images/header-fr.jpg) no-repeat center;
+		background-size: contain;
+
+		@media only screen and(max-width: 767px) {
+			background: url(../../images/header-mobile-fr.jpg) no-repeat center;
+			background-size: contain;
+		}
+	}
+
+	&.en-fix{
+		background: url(../../images/header-en.jpg) no-repeat center;
+		background-size: contain;
+
+		@media only screen and(max-width: 767px) {
+			background: url(../../images/header-mobile-en.jpg) no-repeat center;
+			background-size: contain;
+		}
+	}
+
+	&.de-fix{
+		background: url(../../images/header-de.jpg) no-repeat center;
+		background-size: contain;
+
+		@media only screen and(max-width: 767px) {
+			background: url(../../images/header-mobile-de.jpg) no-repeat center;
+			background-size: contain;
+		}
+	}
+
+	&.nl-fix.valentijn{
 		background: url(../../images/header-valentijn-nl.jpg) no-repeat center;
 		background-size: contain;
 
@@ -19,7 +59,7 @@
 		}
 	}
 
-	&.fr-fix{
+	&.fr-fix.valentijn{
 		background: url(../../images/header-valentijn-fr.jpg) no-repeat center;
 		background-size: contain;
 
@@ -29,7 +69,7 @@
 		}
 	}
 
-	&.en-fix{
+	&.en-fix.valentijn{
 		background: url(../../images/header-valentijn-en.jpg) no-repeat center;
 		background-size: contain;
 
@@ -39,7 +79,7 @@
 		}
 	}
 
-	&.de-fix{
+	&.de-fix.valentijn{
 		background: url(../../images/header-valentijn-de.jpg) no-repeat center;
 		background-size: contain;
 
@@ -48,8 +88,6 @@
 			background-size: contain;
 		}
 	}
-
-	
 
 	&:after{
 		background: url(../../images/schaduw.png) no-repeat center;
