@@ -3,9 +3,9 @@
 <link href='//fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
 
 <!--[if lt IE 9]>
-	  <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-	  <script>window.html5 || document.write('<script src="js/vendor/html5shiv.js"><\/script>')</script>
-	<![endif]-->
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script>window.html5 || document.write('<script src="js/vendor/html5shiv.js"><\/script>')</script>
+  <![endif]-->
 
 <div id="lp-cadeaucheques-wrapper">
   <section class="lp-cadeaucheques-header">
@@ -18,9 +18,9 @@
       </div>
     </div>
 
-    <section class="lp-cadeaucheques-promo lp-clearfix">
+    <!-- <section class="lp-cadeaucheques-promo lp-clearfix">
       <p class="lp-cadeaucheques-promo-text">Bestel tussen 10 en 14 februari 2015 een A.S.Adventure cadeaucheque en maak kans op een romantische getaway ter waarde van &euro;500!</p>
-    </section>
+    </section> -->
 
     <hgroup class="lp-cadeaucheques-header-headinggroup">
       <h1 class="lp-cadeaucheques-header-heading">Maak kennis met de A.S.Adventure-cadeaucheques</h1>
@@ -116,3 +116,33 @@
     </article>
   </footer>
 </div>
+
+<script type='text/javascript'>
+function message() {
+  var itemToPrepend = document.getElementById('lp-cadeaucheques-header-headinggroup');
+
+  var messageContainerElement = document.createElement('section');
+  messageContainerElement.innerHTML = "<p class='lp-cadeaucheques-promo-text'>Bestel tussen 10 en 14 februari 2015 een A.S.Adventure cadeaucheque en maak kans op een romantische getaway ter waarde van &euro;500!</p>";
+  messageContainerElement.className = 'lp-cadeaucheques-promo lp-clearfix';
+
+  itemToPrepend.parentNode.insertBefore(messageContainerElement, itemToPrepend);
+}
+
+// Date to begin
+var d1 = new Date('2015, 2, 10').getTime();
+// Date to end
+var d2 = new Date('2015, 2, 15').getTime();
+
+function dateRange(d1, d2) {
+  // Today
+  // var testDate = new Date().getTime();
+  var testDate = new Date('2015, 2, 14').getTime();
+  if (testDate >= d1 && testDate < d2) {
+    message();
+  } else {
+
+  }
+}
+
+dateRange(d1, d2);
+</script>
